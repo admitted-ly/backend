@@ -51,6 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #developer apps
+    'apps.linear_regression',
+
     #third party applications
     'rest_framework',
     'rest_framework_swagger',

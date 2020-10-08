@@ -21,6 +21,7 @@ from rest_framework_swagger.views import get_swagger_view
 schema_view = get_swagger_view(title='Admittedly API Documentation')
 
 urlpatterns = [
+    path('api/v1/', include('apps.linear_regression.api.urls')),
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('', schema_view),
