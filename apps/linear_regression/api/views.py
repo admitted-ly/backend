@@ -10,7 +10,7 @@ class RecommendCollege(APIView):
 	def post(self, request):
 		"""
 			This endpoint returns a list of colleges based on some variables.
-			this endpoint expects a post request with a user's SAT, TOEFL scores.
+			this endpoint expects a post request with a user's SAT score and zip code.
 		"""
 		serializer = self.serializer_class(request.data)
 
