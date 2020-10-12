@@ -11,8 +11,15 @@ class RecommendCollege(APIView):
 		"""
 			This endpoint returns a list of colleges based on some variables.
 			this endpoint expects a post request with a user's SAT score and zip code.
+			The variables must be defined in this format:
+			sat_score
+			zip_code
 		"""
-		#serializer = self.serializer_class(request.data)
+	
 		colleges_list = get_colleges_list(request.data['sat_score'], request.data['zip_code'])
+		data = colleges_list[0]
 
-		return Response(colleges_list, status=status.HTTP_200_OK)
+		if len(data) > 0:
+			return Response(data, status=status.HTTP_200_OK)
+		else:
+			return Response("Ooops!! We couldn't match you with any college", status=status.HTTP_200_OK)
