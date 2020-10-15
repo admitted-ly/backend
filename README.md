@@ -1,11 +1,10 @@
-# backend
-personalized college matching in the US-- Python/Django API
+
 <h1 align="center">
-	Admittedly Frontend
-</h1>
+Admittedly Backend
+<h1 align="center">/h1>
 
 <p align="center">
-	<i>Personalized College Matching in the US for high school seniors</i>
+	<i>Personalized College Matching in the US for high school seniors-- Python/Django API </i>
 </p>
 
 <img align="center" width="900" height="300" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/249/401/datas/original.PNG">
