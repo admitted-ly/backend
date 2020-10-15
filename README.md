@@ -1,7 +1,7 @@
 
 <h1 align="center">
 Admittedly Backend
-<h1 align="center">/h1>
+</h1>
 
 <p align="center">
 	<i>Personalized College Matching in the US for high school seniors-- Python/Django API </i>
